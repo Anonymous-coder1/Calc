@@ -1,0 +1,64 @@
+body{
+	background-color: #96d1c7;
+}
+table{
+	position: absolute;
+	top: 45%;
+	left: 40%;
+}
+.hu{
+	text-align: center;
+}
+.wi{
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.navbar{
+	margin-top: 10px;
+}
+.volla{
+	background-color: #fa5477;
+}
+.noob{
+	background-color: #96d1c7;
+}
+.ds{
+	font-family: ubuntu;
+	font-weight: bold;
+}
+.calc{
+	background-color: #96d1c7;
+	height: 500px;
+
+}
+.volla1{
+	color: white;
+	border-style: dotted;
+}
+p{
+font-family: russo one;
+color: white;
+font-size: 25px;
+}
+.volla32{
+	position: absolute;
+	top: 75%;
+	left: 32%;
+}
+.volla23{
+	position: absolute;
+	top: 80%;
+	left: 32%;
+}
+.intro{
+	background-color: #c299fc;
+	margin-top: 12px;
+	margin-bottom: 0: 
+}
+li{
+	font-family: russo one;
+color: white;
+font-size: 25px;
+}

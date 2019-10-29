@@ -1,0 +1,130 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="nop.css">
+      <link href="https://fonts.googleapis.com/css?family=Russo+One|Sacramento|Ubuntu&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div class="noob">
+<nav class="navbar navbar-expand-lg navbar-dark">
+          
+          <a class="navbar-brand ds" href="">Calculator</a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#pricing">Pricing</a></li>
+              <li class="nav-item">
+                <a class="nav-link " href="#cta">Download</a>
+              </li>
+              </ul></div></nav>
+   
+
+   <script> 
+      //function that display value 
+      function dis(val) 
+      { 
+         document.getElementById("result").value+=val 
+      } 
+      
+      //function that evaluates the digit and return result 
+      function solve() 
+      { 
+         let x = document.getElementById("result").value 
+         let y = eval(x) 
+         document.getElementById("result").value = y 
+      } 
+      
+      //function that clear the display 
+      function clr() 
+      { 
+         document.getElementById("result").value = "" 
+      } 
+   </script> 
+   <!-- for styling -->
+   <style> 
+      .title{ 
+      margin-bottom: 10px; 
+      text-align:center; 
+      width: 210px; 
+      color:green; 
+      border: solid black 2px; 
+      } 
+
+      input[type="button"] 
+      { 
+      background-color: #3e64ff; 
+      color: black; 
+      border: solid black 2px; 
+      width:100% 
+      } 
+
+      input[type="text"] 
+      { 
+      background-color:white; 
+      border: solid black 2px; 
+      width:100% 
+      } 
+   </style> 
+
+<!-- create table -->
+<hr class="volla1">
+<div class="calc">
+   <table border="1"> 
+      <tr> 
+         <td colspan="3"><input type="text" id="result"/></td> 
+         <!-- clr() function will call clr to clear all value -->
+         <td><input type="button" value="c" onclick="clr()"/> </td> 
+      </tr> 
+      <tr> 
+         <!-- create button and assign value to each button -->
+         <!-- dis("1") will call function dis to display value -->
+         <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+         <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+         <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+         <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+         <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+         <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+         <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+         <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+         <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+         <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" value="." onclick="dis('.')"/> </td> 
+         <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+         <!-- solve function call function solve to evaluate value -->
+         <td><input type="button" value="=" onclick="solve()"/> </td> 
+         <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+      </tr> 
+   </table> 
+   <p class="volla32">Calculate with ligtning speed.</p>
+   <p class="volla23">The calcultar can help you a lot, while studying, while coding.</p>
+</div>
+<div class="intro">
+  <p>The website has been developed by:-
+   <ol>
+      <li>Parikshit</li>
+      <li>Ruthvik</li>
+   </ol>
+</p>
+</div>
+
+</html> 
